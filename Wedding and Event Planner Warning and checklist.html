@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Making These 7 Costly Mistakes When Booking Your Event Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cream: #FAF7F2;
+            --sage: #9DAD7F;
+            --deep-green: #3C553C;
+            --charcoal: #2C2C2C;
+            --gold: #C9A870;
+            --soft-white: #FFFFFF;
+            --shadow: rgba(60, 85, 60, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--cream);
+            color: var(--charcoal);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--deep-green) 0%, var(--sage) 100%);
+            color: var(--soft-white);
+            padding: 80px 20px 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(5deg); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .eyebrow {
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 500;
+            margin-bottom: 20px;
+            animation: fadeInDown 0.8s ease;
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+        
+        .price-box {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 30px 50px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+        
+        .price {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--gold);
+            margin-bottom: 5px;
+        }
+        
+        .price-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--charcoal);
+            padding: 20px 60px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeInUp 1s ease 0.8s both;
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        /* Problem Section */
+        .problem-section {
+            padding: 100px 20px;
+            background: var(--soft-white);
+        }
+        
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--deep-green);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.15rem;
+            color: var(--charcoal);
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.8;
+        }
+        
+        .traps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .trap-card {
+            background: var(--cream);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px var(--shadow);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--sage);
+        }
+        
+        .trap-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+        
+        .trap-number {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--gold);
+            opacity: 0.3;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+        
+        .trap-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--deep-green);
+        }
+        
+        .trap-description {
+            font-size: 0.95rem;
+            color: var(--charcoal);
+            line-height: 1.7;
+            opacity: 0.85;
+        }
+        
+        /* Solution Section */
+        .solution-section {
+            padding: 100px 20px;
+            background: var(--deep-green);
+            color: var(--soft-white);
+            position: relative;
+        }
+        
+        .solution-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to bottom, var(--soft-white), transparent);
+            opacity: 0.1;
+        }
+        
+        .solution-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .solution-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        
+        .solution-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .team-intro {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 50px;
+            margin: 60px 0;
+        }
+        
+        .team-member {
+            text-align: center;
+        }
+        
+        .team-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: var(--gold);
+        }
+        
+        .team-role {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+        
+        .team-description {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        
+        /* Video Section */
+        .video-section {
+            padding: 100px 20px;
+            background: var(--soft-white);
+        }
+        
+        .video-link-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .video-button {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: linear-gradient(135deg, var(--sage) 0%, var(--deep-green) 100%);
+            padding: 40px 50px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: var(--soft-white);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 40px var(--shadow);
+        }
+        
+        .video-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px var(--shadow);
+        }
+        
+        .play-icon {
+            font-size: 4rem;
+            background: var(--gold);
+            color: var(--charcoal);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .video-button:hover .play-icon {
+            transform: scale(1.1);
+        }
+        
+        .video-text h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+        
+        .video-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        /* What You Get Section */
+        .what-you-get {
+            padding: 100px 20px;
+            background: var(--cream);
+        }
+        
+        .benefits-list {
+            max-width: 800px;
+            margin: 50px auto 60px;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: var(--soft-white);
+            border-radius: 15px;
+            box-shadow: 0 3px 15px var(--shadow);
+        }
+        
+        .benefit-icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            color: var(--sage);
+            min-width: 50px;
+        }
+        
+        .benefit-text h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--deep-green);
+        }
+        
+        .benefit-text p {
+            font-size: 0.95rem;
+            color: var(--charcoal);
+            opacity: 0.85;
+        }
+        
+        /* Final CTA Section */
+        .final-cta {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, var(--sage) 0%, var(--deep-green) 100%);
+            color: var(--soft-white);
+            text-align: center;
+        }
+        
+        .final-cta h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        
+        .final-cta p {
+            font-size: 1.15rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .guarantee {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.3);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: 40px auto 0;
+            backdrop-filter: blur(10px);
+        }
+        
+        .guarantee h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--gold);
+        }
+        
+        /* Footer */
+        footer {
+            padding: 40px 20px;
+            background: var(--charcoal);
+            color: var(--cream);
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .price {
+                font-size: 2.5rem;
+            }
+            
+            .traps-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-button {
+                padding: 18px 40px;
+                font-size: 1rem;
+            }
+            
+            .video-button {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+            }
+            
+            .play-icon {
+                width: 80px;
+                height: 80px;
+                font-size: 3rem;
+            }
+            
+            .video-text h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="eyebrow">Wedding & Event Planning Insider Secrets</div>
+            <h1>The 7 Traps That Cost Couples $5,000+ When Booking Event Professionals</h1>
+            <p class="hero-subtitle">Before you sign another contract, discover what wedding planners and decorators don't want you to know about choosing the right team for your dream event.</p>
+            
+            <div class="price-box">
+                <div class="price">$48.13</div>
+                <div class="price-label">One-Time Investment</div>
+            </div>
+            
+            <a href="mailto:randy@rbridgebusinessinstitute.com?subject=I%20Want%20The%207%20Traps%20Wedding%20%26%20Event%20Planning%20Guide&body=Hi%2C%0A%0AI'm%20interested%20in%20getting%20the%20Wedding%20%26%20Event%20Planning%20Starter%20Kit%20and%20learning%20the%207%20traps%20to%20avoid.%0A%0AMy%20event%20details%3A%0AEvent%20Type%3A%20%0AEvent%20Date%3A%20%0ALocation%3A%20%0A%0APlease%20send%20me%20the%20guide!%0A%0AThank%20you" class="cta-button">Get Your Starter Kit Now</a>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <h2 class="section-title">Here's What Nobody Tells You</h2>
+            <p class="section-subtitle">After working with hundreds of couples and businesses, we've seen these same costly mistakes destroy events—and budgets—over and over again.</p>
+            
+            <div class="traps-grid">
+                <div class="trap-card">
+                    <div class="trap-number">01</div>
+                    <h3 class="trap-title">The "Ghost Planner" Trap</h3>
+                    <p class="trap-description">You hire a planner who looks great on Instagram... then they disappear for weeks at a time, take unannounced vacations right before your event, or delegate everything to inexperienced assistants who've never even met you.</p>
+                </div>
+                
+                <div class="trap-card">
+                    <div class="trap-number">02</div>
+                    <h3 class="trap-title">The "Day-Of Surprise" Trap</h3>
+                    <p class="trap-description">Your "full-service" planner shows up on wedding day with ONE assistant when you expected three. Suddenly your family is setting up centerpieces and moving chairs while you're trying to get ready.</p>
+                </div>
+                
+                <div class="trap-card">
+                    <div class="trap-number">03</div>
+                    <h3 class="trap-title">The "Wikipedia Expert" Trap</h3>
+                    <p class="trap-description">You ask for church recommendations and get a link to Google. You ask for unique venue ideas and get the same tired spots everyone uses. You're essentially paying thousands for someone to do what you could've Googled yourself.</p>
+                </div>
+                
+                <div class="trap-card">
+                    <div class="trap-number">04</div>
+                    <h3 class="trap-title">The "Pretty Portfolio" Trap</h3>
+                    <p class="trap-description">Their website shows Martha Stewart-worthy events, but when it's YOUR day, they're texting in the corner while your timeline falls apart. Beautiful photos don't mean they can actually manage an event.</p>
+                </div>
+                
+                <div class="trap-card">
+                    <div class="trap-number">05</div>
+                    <h3 class="trap-title">The "Vague Contract" Trap</h3>
+                    <p class="trap-description">You sign a contract that says "full planning" but doesn't specify what that includes. Two weeks before your event, every little request becomes an "additional fee." That $3,000 package just became $5,500.</p>
+                </div>
+                
+                <div class="trap-card">
+                    <div class="trap-number">06</div>
+                    <h3 class="trap-title">The "Missing Timeline" Trap</h3>
+                    <p class="trap-description">No one enforces the schedule. Cocktail hour runs 30 minutes late. The first dance gets skipped. Your photographer leaves before cake cutting because someone didn't manage the vendors.</p>
+                </div>
+                
+                <div class="trap-card">
+                    <div class="trap-number">07</div>
+                    <h3 class="trap-title">The "One Size Fits All" Trap</h3>
+                    <p class="trap-description">They don't understand the difference between decor needs and planning needs. You need both a visual designer AND someone to manage logistics, but you're paying for one person trying to do both jobs poorly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="solution-content">
+            <h2 class="solution-title">What If You Could Work With TWO Specialists Instead of One Generalist?</h2>
+            <p class="solution-text">Most couples waste money hiring "do-it-all" planners who are mediocre at everything. We're doing something different: a true collaboration between a decorator who transforms spaces and an event planner who makes everything run flawlessly.</p>
+            
+            <div class="team-intro">
+                <div class="team-member">
+                    <h3 class="team-name">Care Monique</h3>
+                    <p class="team-role">Lead Decorator | All It Events</p>
+                    <p class="team-description">Master of transforming venues into unforgettable experiences. Specializes in creating cohesive, stunning visual environments that reflect your unique style—not cookie-cutter Pinterest boards.</p>
+                </div>
+                
+                <div class="team-member">
+                    <h3 class="team-name">Rebekah J</h3>
+                    <p class="team-role">Event Planner | Events by RJ</p>
+                    <p class="team-description">The behind-the-scenes powerhouse who ensures every detail happens on time, every vendor shows up prepared, and you actually get to enjoy your event instead of managing it.</p>
+                </div>
+            </div>
+            
+            <p class="solution-text">Together, we bring you the expertise of TWO full-time professionals who actually communicate, coordinate, and cover each other—no ghosting, no surprises, no family members scrambling to set up your event.</p>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">Care Monique and Rebekah J</h2>
+            <p class="section-subtitle">Watch Care and Rebekah explain how their collaboration creates better events</p>
+            <div class="video-link-container">
+                <a href="https://www.youtube.com/shorts/W2RhXHaJ9NI" target="_blank" class="video-button">
+                    <div class="play-icon">▶</div>
+                    <div class="video-text">
+                        <h3>Watch Our Introduction Video</h3>
+                        <p>Click to see how we work together to create unforgettable events</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="what-you-get">
+        <div class="container">
+            <h2 class="section-title">Inside Your Starter Kit</h2>
+            <p class="section-subtitle">Everything you need to make smart decisions and avoid the traps that destroy events and budgets</p>
+            
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <div class="benefit-text">
+                        <h3>The 7 Traps Detailed Guide</h3>
+                        <p>Real stories, red flags to watch for, and exactly what questions to ask BEFORE you sign any contract with any planner or decorator.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <div class="benefit-text">
+                        <h3>The Contract Checklist</h3>
+                        <p>Line-by-line breakdown of what MUST be in your planning contract to protect yourself from hidden fees and vague promises.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <div class="benefit-text">
+                        <h3>Budget Reality Calculator</h3>
+                        <p>Know exactly what "full-service planning" should cost vs. "day-of coordination" vs. "decor only" so you never overpay again.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <div class="benefit-text">
+                        <h3>The Vendor Interview Script</h3>
+                        <p>Copy-paste questions that expose whether a planner is actually experienced or just has a pretty Instagram feed.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <div class="benefit-text">
+                        <h3>Decorator vs. Planner vs. Coordinator Guide</h3>
+                        <p>Finally understand the difference between these roles so you hire the RIGHT professionals instead of paying for the wrong services.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <div class="benefit-text">
+                        <h3>Day-Of Timeline Template</h3>
+                        <p>The exact timeline format that ensures nothing gets skipped, no one runs late, and your family doesn't become unpaid staff.</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">✓</div>
+                    <div class="benefit-text">
+                        <h3>Bonus: Direct Access to Our Team</h3>
+                        <p>Email consultation access to ask specific questions about YOUR vendors, YOUR venue, and YOUR unique situation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Stop Gambling With Your Event</h2>
+            <p>For less than the cost of most vendor deposits, arm yourself with insider knowledge that protects your budget, your timeline, and your sanity.</p>
+            
+            <a href="mailto:randy@rbridgebusinessinstitute.com?subject=I%20Want%20The%207%20Traps%20Wedding%20%26%20Event%20Planning%20Guide&body=Hi%2C%0A%0AI'm%20interested%20in%20getting%20the%20Wedding%20%26%20Event%20Planning%20Starter%20Kit%20and%20learning%20the%207%20traps%20to%20avoid.%0A%0AMy%20event%20details%3A%0AEvent%20Type%3A%20%0AEvent%20Date%3A%20%0ALocation%3A%20%0A%0APlease%20send%20me%20the%20guide!%0A%0AThank%20you" class="cta-button">Yes, I Want The Starter Kit</a>
+            
+            <div class="guarantee">
+                <h3>Our Insider Promise</h3>
+                <p>This isn't theory from someone who quit planning years ago. We're active professionals working real weddings and events every week. The insights in this guide come from what we're seeing right now—and what couples wish they'd known before spending thousands on the wrong team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 All It Events & Events by RJ | Care Monique & Rebekah J | Wedding & Event Planning Specialists</p>
+            <p>Questions? Email: randy@rbridgebusinessinstitute.com</p>
+        </div>
+    </footer>
+</body>
+</html>
